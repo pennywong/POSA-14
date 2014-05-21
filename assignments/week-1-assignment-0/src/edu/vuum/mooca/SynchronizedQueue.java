@@ -220,8 +220,8 @@ public class SynchronizedQueue {
             // initialization below to create two Java Threads, one
             // that's passed the producerRunnable and the other that's
             // passed the consumerRunnable.
-            Thread consumer = new Thread(consumerRunnable);
-            Thread producer = new Thread(producerRunnable);
+			Thread consumer = new Thread(consumerRunnable);
+			Thread producer = new Thread(producerRunnable);
 
             // TODO - you fill in here to start the threads. More
             // interesting results will occur if you start the
@@ -240,7 +240,7 @@ public class SynchronizedQueue {
             // TODO - you fill in here to wait for the threads to
             // exit.
 			producer.join();
-            consumer.join();
+			consumer.join();
             
             // Do some sanity checking to see if the Threads work as
             // expected.
